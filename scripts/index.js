@@ -17,6 +17,12 @@ function displayCatInfo(catString) {
   // Add your code here
   JSON.parse(cats.json);
   
+  for (let i = 0; i < cats.length; i++) {
+    
+    motherInfo = 'The mother cats are called ' + cats['name'][0] + ', ' + cats['name'][1] + ', and ' + cats['name'][2] + '.';
+    
+    
+  
 
 
 
