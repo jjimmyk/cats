@@ -13,6 +13,7 @@ fetch('sample.json')
 function displayCatInfo(catString) {
   let total = 0;
   let male = 0;
+  let female = 0;
 
   // Add your code here
   JSON.parse(cats.json);
@@ -20,6 +21,18 @@ function displayCatInfo(catString) {
   for (let i = 0; i < cats.length; i++) {
     
     motherInfo = 'The mother cats are called ' + cats['name'][0] + ', ' + cats['name'][1] + ', and ' + cats['name'][2] + '.';
+    
+    if (cats['kittens']['gender'] == 'm') {
+      male ++;
+      else {
+        female ++;
+      }
+    }
+    
+    kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
+        
+    
+  }
     
     
   
