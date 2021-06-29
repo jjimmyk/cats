@@ -15,6 +15,8 @@ function displayCatInfo(catString) {
   let male = 0;
 
   // Add your code here
+  JSON.parse(cats.json);
+  
 
 
 
