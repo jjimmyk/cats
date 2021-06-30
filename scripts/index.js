@@ -55,6 +55,8 @@ function displayCatInfo(catString) {
     //of the cats array, increment k.
     for (let k =0;k<cats[i].kittens.length;k++)
     {
+          total = k;
+      
           //If the gender attribute of k is 'm', increment variable 'male'.
           if (cats[i]['kittens'][k]['gender'] == 'm') {
               male ++;
@@ -72,9 +74,9 @@ function displayCatInfo(catString) {
     
   }
   //Finally, add a period to the end of the motherInfo sentence.
-  //Set the value of kittenInfo to contain the value of male and female kittens.
+  //Set the value of kittenInfo to contain the value of male, female and total kittens.
   motherInfo += ".";
-  kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
+  kittenInfo = 'There are ' + male + ' male kittens, ' + female + ' female kittens, and ' + total + ' kittens total.';
     
   
 
