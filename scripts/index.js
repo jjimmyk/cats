@@ -26,9 +26,9 @@ function displayCatInfo(catString) {
     {
       motherInfo+=", ";
     }
-    motherInfo  += cats[i]['name']
+    motherInfo  += cats[i]['name'];
    
-    for (let k =0;k<cats[i].kittens.length)
+    for (let k =0;k<cats[i].kittens.length;k++)
     {
           if (cats[i]['kittens'][k]['gender'] == 'm') {
               male ++;
