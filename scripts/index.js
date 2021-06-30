@@ -2,7 +2,6 @@ const section = document.querySelector('section');
 
 let para1 = document.createElement('p');
 let para2 = document.createElement('p');
-
 let motherInfo = 'The mother cats are called ';
 let kittenInfo;
 // http://server.com/cats.json
@@ -18,7 +17,8 @@ function displayCatInfo(catString) {
   // Add your code here
   const cats = JSON.parse(catString);
   
-  motherInfo 'The mother cats are called '
+
+
   for (let i = 0; i < cats.length; i++) {
     
     //motherInfo = 'The mother cats are called ' + cats[0]['name'] + ', ' + cats['name'][1] + ', and ' + cats['name'][2] + '.';
@@ -46,7 +46,7 @@ function displayCatInfo(catString) {
   }
   // loops done finalized text.
   motherInfo += ".";
-  let   kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
+  kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
     
   
 
