@@ -44,7 +44,7 @@ function displayCatInfo(catString) {
 
   para1.textContent = motherInfo;
   para2.textContent = kittenInfo;
-}
+
 
 section.appendChild(para1);
 section.appendChild(para2);
