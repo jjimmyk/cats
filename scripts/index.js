@@ -41,6 +41,11 @@ function displayCatInfo(catString) {
     {
       motherInfo+=", ";
     }
+    
+    if (i == cats.length-1) {
+      motherInfo+="and ";
+    }
+    
     //Add the 'name' attribute of the location of the index within the cats array to variable motherInfo. This adds the names of the mother cats
     //to variable motherInfo.
     motherInfo  += cats[i]['name'];
