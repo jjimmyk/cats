@@ -24,6 +24,7 @@ function displayCatInfo(catString) {
     
     if (cats['kittens']['gender'] == 'm') {
       male ++;
+    }
       else {
         female ++;
       }
