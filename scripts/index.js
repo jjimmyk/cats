@@ -5,7 +5,7 @@ let para2 = document.createElement('p');
 let motherInfo = 'The mother cats are called ';
 let kittenInfo;
 // http://server.com/cats.json
-fetch('../cats/cats.json')
+fetch('../cats/cats.json?v=1')
 .then(response => response.text())
 .then(text => displayCatInfo(text))
 
