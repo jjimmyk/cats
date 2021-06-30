@@ -42,6 +42,7 @@ function displayCatInfo(catString) {
       motherInfo+=", ";
     }
     
+    //If we're one item before the end of the cats array, add an 'and ' for correct grammar.
     if (i == cats.length-1) {
       motherInfo+="and ";
     }
