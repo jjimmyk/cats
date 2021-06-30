@@ -31,20 +31,29 @@ function displayCatInfo(catString) {
  //motherInfo = 'The mother cats are called ' + cats[0]['name'] + ', ' + cats['name'][1] + ', and ' + cats['name'][2] + '.';
  //^I was going to use this, but this doesn't necessitate a loop and only works if there are 3 mother cats/if I know how many mother cats there are.
 
+  //Start the for loop to iterate through the array of cats.
+  //Set counter to 0. As long as i is less than the length of the cats array, increment i.
   for (let i = 0; i < cats.length; i++) {
     
-    
+    //If i is greater than 0, first add a comma & space to mother info to create commas after each cat name. This is to ensure that a comma isn't inserted 
+    //before the first cat.
     if (i>0)
     {
       motherInfo+=", ";
     }
+    //Add the 'name' attribute of the location of the index within the cats array to variable motherInfo. This adds the names of the mother cats
+    //to variable motherInfo.
     motherInfo  += cats[i]['name'];
    
+    //Start embedded for loop. Declare k (kittens) counter at 0. As long as k is less than the length of the kittens object within the current index
+    //of the cats array, increment k.
     for (let k =0;k<cats[i].kittens.length;k++)
     {
+          //If the gender attribute of k is 'm', increment variable 'male'.
           if (cats[i]['kittens'][k]['gender'] == 'm') {
               male ++;
           }
+          //If the gender attribute of k is not 'm', increment variable 'female'.
           else {
             female ++;
           }
@@ -56,7 +65,8 @@ function displayCatInfo(catString) {
         
     
   }
-  // loops done finalized text.
+  //Finally, add a period to the end of the motherInfo sentence.
+  //Set the value of kittenInfo to contain the value of male and female kittens.
   motherInfo += ".";
   kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
     
