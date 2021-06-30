@@ -61,3 +61,4 @@ function displayCatInfo(catString) {
 section.appendChild(para1);
 section.appendChild(para2);
     
+}
