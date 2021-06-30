@@ -6,7 +6,7 @@ let para2 = document.createElement('p');
 let motherInfo = 'The mother cats are called ';
 let kittenInfo;
 
-fetch('sample.json')
+fetch('cats.json')
 .then(response => response.text())
 .then(text => displayCatInfo(text))
 
@@ -16,25 +16,37 @@ function displayCatInfo(catString) {
   let female = 0;
 
   // Add your code here
-  JSON.parse(cats.json);
+  const cats = JSON.parse(catString);
   
+  motherInfo 'The mother cats are called '
   for (let i = 0; i < cats.length; i++) {
     
-    motherInfo = 'The mother cats are called ' + cats['name'][0] + ', ' + cats['name'][1] + ', and ' + cats['name'][2] + '.';
-    
-    if (cats['kittens']['gender'] == 'm') {
-      male ++;
+    //motherInfo = 'The mother cats are called ' + cats[0]['name'] + ', ' + cats['name'][1] + ', and ' + cats['name'][2] + '.';
+    if (i>0)
+    {
+      motherInfo+=", ";
     }
-      else {
-        female ++;
-      }
+    motherInfo  += cats[i]['name']
+   
+    for (let k =0;k<cats[i].kittens.length)
+    {
+          if (cats[i]['kittens'][k]['gender'] == 'm') {
+              male ++;
+          }
+          else {
+            female ++;
+          }
     }
     
-    kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
+
+    
+   
         
     
   }
-    
+  // loops done finalized text.
+  motherInfo += ".";
+  let   kittenInfo = 'There are ' + male + ' male kittens and ' + female + ' female kittens.';
     
   
 
