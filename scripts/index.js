@@ -55,7 +55,7 @@ function displayCatInfo(catString) {
     //of the cats array, increment k.
     for (let k =0;k<cats[i].kittens.length;k++)
     {
-          total = k;
+          total++;
       
           //If the gender attribute of k is 'm', increment variable 'male'.
           if (cats[i]['kittens'][k]['gender'] == 'm') {
